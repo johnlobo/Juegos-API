@@ -1,0 +1,19 @@
+# Opalstack Node.js README
+
+## Controlling your app
+
+Start your app by running:
+
+   /home/drodri/apps/juegos-backend/start
+
+Stop your app by running:
+
+   /home/drodri/apps/juegos-backend/stop
+
+## Installing modules
+
+If you want to install Node modules in your app directory:
+
+cd /home/drodri/apps/juegos-backend
+npm install modulename
+
