@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "ddb39217-f3e9-46d3-9ffc-079885417e2c",
+		"name": "Juegos-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "SignUP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"drodri73\",\r\n    \"email\": \"drodri@gmail.com\",\r\n    \"password\": \"Chinaski99\",\r\n    \"roles\": [\"moderator\",\"user\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/signin",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"drodri73\",\r\n    \"password\": \"Chinaski99\"\r\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/signin",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": []
+		},
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "Test Public",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/api/test/all",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"test",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY2MjU4NDA5LCJleHAiOjE2NjYzNDQ4MDl9.8WKxqaTI-HE34YIn-oqfaJgmUGSYjc4L3NLC-TcOTuw",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/api/test/user",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"test",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Moderator",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY2MjU4NDA5LCJleHAiOjE2NjYzNDQ4MDl9.8WKxqaTI-HE34YIn-oqfaJgmUGSYjc4L3NLC-TcOTuw",
+								"description": "Moderator token",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/api/test/mod",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"test",
+								"mod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY2MjU4NDA5LCJleHAiOjE2NjYzNDQ4MDl9.8WKxqaTI-HE34YIn-oqfaJgmUGSYjc4L3NLC-TcOTuw",
+								"description": "Moderator token",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/api/test/admin",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"test",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
