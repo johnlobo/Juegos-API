@@ -2,7 +2,8 @@
 export TMPDIR=/home/drodri/apps/juegos-backend/tmp
 mkdir -p /home/drodri/apps/juegos-backend/tmp
 PIDFILE="/home/drodri/apps/juegos-backend/tmp/node.pid"
-NODE=/home/drodri/apps/juegos-backend/node/bin/node
+#NODE=/home/drodri/apps/juegos-backend/node/bin/node
+NODE=/home/drodri/apps/juegos/node/bin/node
 
 if [ -e "$PIDFILE" ] && (pgrep -u drodri | grep -x -f $PIDFILE &> /dev/null); then
   echo "Node.js for juegos-backend already running."
